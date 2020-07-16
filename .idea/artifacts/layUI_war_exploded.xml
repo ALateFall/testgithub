@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="layUI界面静态原型:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/layUI_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="layUI界面静态原型/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="layUI界面静态原型" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
