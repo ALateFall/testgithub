@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Arrays;
 import java.util.List;
 
 @WebServlet(urlPatterns = "/abc")
@@ -29,6 +30,9 @@ public class HelloServlet extends HttpServlet {
         response.setHeader("Access-Control-Max-Age","3600");
         response.setHeader("Access-Control-Allow-Headers","*");
         response.setHeader("Access-Control-Allow-Credentials","true");
+        response.setHeader("content-type","text/html;charset=UTF-8");
+        response.setCharacterEncoding("UTF-8");
+//        request.setContentType("text/html,charset=utf-8");
         int a = 0;
         try {
             List<Hero>list = heroDao.findAll();
